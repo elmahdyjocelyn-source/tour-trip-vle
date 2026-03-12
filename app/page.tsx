@@ -1,48 +1,49 @@
-<section id="tours" style={{ padding: "60px", textAlign: "center" }}>
-  <h2>Top Cebu Tours</h2>
+export default function Home() {
+  return (
+    <main>
 
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(250px,1fr))",
-      gap: "25px",
-      marginTop: "30px",
-    }}
-  >
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e"
-        width="100%"
-      />
-      <h3>Oslob Whale Shark</h3>
-      <p>Swim with the gentle giants in Oslob.</p>
-    </div>
+      {/* Navigation */}
+      <nav style={{
+        display: "flex",
+        justifyContent: "space-between",
+        padding: "20px",
+        background: "#0b3d91",
+        color: "white"
+      }}>
+        <h2>Cebu Island Tours</h2>
+        <div>
+          <a href="#" style={{marginRight:"20px",color:"white"}}>Home</a>
+          <a href="#" style={{marginRight:"20px",color:"white"}}>Tours</a>
+          <a href="#" style={{color:"white"}}>Contact</a>
+        </div>
+      </nav>
 
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1604537466158-719b1972feb8"
-        width="100%"
-      />
-      <h3>Kawasan Falls</h3>
-      <p>Experience the famous turquoise waterfalls.</p>
-    </div>
+      {/* Hero */}
+      <section style={{textAlign:"center",padding:"60px"}}>
+        <h1>Explore Beautiful Cebu</h1>
+        <p>Island Hopping • Whale Sharks • Waterfalls</p>
+      </section>
 
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-        width="100%"
-      />
-      <h3>Cebu Island Hopping</h3>
-      <p>Explore beautiful islands and white sand beaches.</p>
-    </div>
+      {/* Cebu Tours */}
+      <section style={{display:"flex",gap:"20px",justifyContent:"center",padding:"40px"}}>
 
-    <div>
-      <img
-        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa"
-        width="100%"
-      />
-      <h3>Bohol Countryside</h3>
-      <p>Visit Chocolate Hills and the Tarsier Sanctuary.</p>
-    </div>
-  </div>
-</section>
+        <div>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="300"/>
+          <p>Cebu Island Hopping</p>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c" width="300"/>
+          <p>Kawasan Falls Adventure</p>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1605538883669-825dbe96c5c5" width="300"/>
+          <p>Oslob Whale Shark</p>
+        </div>
+
+      </section>
+
+    </main>
+  );
+}
