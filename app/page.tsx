@@ -1,87 +1,112 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="font-sans">
+    <main style={{fontFamily:"Arial, sans-serif"}}>
 
-      <section className="bg-teal-700 text-white py-16 text-center">
-        <div className="flex justify-center mb-6">
-          <Image
-            src="/logo.png"
-            alt="Tour Trip VLE Logo"
-            width={180}
-            height={180}
-          />
+      {/* HERO SECTION */}
+      <section style={{
+        backgroundImage:"url('https://images.unsplash.com/photo-1528181304800-259b08848526')",
+        backgroundSize:"cover",
+        backgroundPosition:"center",
+        height:"500px",
+        color:"white",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        textAlign:"center"
+      }}>
+        <div>
+          <h1 style={{fontSize:"48px"}}>Explore Cebu & Bohol</h1>
+          <p style={{fontSize:"20px"}}>Private Tours • Island Hopping • Airport Transfers</p>
+          <button style={{
+            padding:"12px 25px",
+            fontSize:"18px",
+            background:"#ff7a00",
+            border:"none",
+            color:"white",
+            marginTop:"15px",
+            borderRadius:"6px"
+          }}>
+            Book Your Tour
+          </button>
         </div>
-
-        <h1 className="text-5xl font-bold">Tour Trip VLE</h1>
-        <p className="mt-4 text-lg">
-          Van Transport & Tour Packages in Cebu and Bohol
-        </p>
       </section>
 
-      <section className="py-14 px-6 text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4">About Us</h2>
-        <p>
-          Tour Trip VLE provides van transport and tour packages across Cebu and Bohol.
-          We offer island hopping, whale shark watching, waterfalls, and historical tours.
-        </p>
-      </section>
+      {/* TOUR PACKAGES */}
+      <section style={{padding:"60px", textAlign:"center"}}>
+        <h2>Popular Tour Packages</h2>
 
-      <section className="bg-teal-50 py-14 px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">Tour Packages</h2>
+        <div style={{
+          display:"grid",
+          gridTemplateColumns:"repeat(auto-fit, minmax(250px,1fr))",
+          gap:"20px",
+          marginTop:"30px"
+        }}>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-          <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold mb-3">Cebu City Tour</h3>
-            <ul>
-              <li>Sirao Garden</li>
-              <li>Temple of Leah</li>
-              <li>Taoist Temple</li>
-              <li>Magellan's Cross</li>
-              <li>Basilica Sto. Niño</li>
-            </ul>
+          <div>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="100%" />
+            <h3>Cebu Island Hopping</h3>
+            <p>Swim with tropical fish and explore beautiful islands.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold mb-3">Moalboal / Badian</h3>
-            <ul>
-              <li>Island Hopping</li>
-              <li>Sardines Run</li>
-              <li>Swim with Turtle</li>
-              <li>Kawasan Canyoneering</li>
-            </ul>
+          <div>
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" width="100%" />
+            <h3>Oslob Whale Shark Tour</h3>
+            <p>Experience swimming with whale sharks in Oslob.</p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="text-xl font-bold mb-3">Oslob Tour</h3>
-            <ul>
-              <li>Whale Shark Watching</li>
-              <li>Sumilon Island</li>
-              <li>Tumalog Falls</li>
-              <li>Carcar Pasalubong</li>
-            </ul>
+          <div>
+            <img src="https://images.unsplash.com/photo-1587502537104-9f40bce1bde2" width="100%" />
+            <h3>Bohol Countryside Tour</h3>
+            <p>Visit Chocolate Hills, Tarsier Sanctuary and Loboc River.</p>
           </div>
 
         </div>
       </section>
 
-      <section className="py-14 text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+      {/* WHY CHOOSE US */}
+      <section style={{background:"#f5f5f5", padding:"60px", textAlign:"center"}}>
+        <h2>Why Choose Us</h2>
 
-        <p>📞 09773211243</p>
-        <p>📞 09352756766</p>
-        <p>📧 tourtripvle@gmail.com</p>
+        <div style={{
+          display:"grid",
+          gridTemplateColumns:"repeat(auto-fit, minmax(200px,1fr))",
+          gap:"20px",
+          marginTop:"30px"
+        }}>
+          <div>
+            <h3>🚐 Private Tours</h3>
+            <p>Comfortable vehicles with professional drivers.</p>
+          </div>
 
-        <a
-          href="https://web.facebook.com/profile.php?id=100086900440664"
-          target="_blank"
-        >
-          Message us on Facebook
-        </a>
+          <div>
+            <h3>⭐ Top Rated</h3>
+            <p>Trusted by hundreds of happy travelers.</p>
+          </div>
+
+          <div>
+            <h3>💬 24/7 Support</h3>
+            <p>Book anytime through WhatsApp or Messenger.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section style={{padding:"60px", textAlign:"center"}}>
+        <h2>Book Your Adventure</h2>
+        <p>Contact us today to reserve your Cebu or Bohol tour.</p>
+
+        <button style={{
+          padding:"12px 25px",
+          fontSize:"18px",
+          background:"#25D366",
+          border:"none",
+          color:"white",
+          borderRadius:"6px"
+        }}>
+          WhatsApp Booking
+        </button>
       </section>
 
     </main>
-  );
+  )
 }
