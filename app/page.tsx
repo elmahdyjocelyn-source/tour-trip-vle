@@ -1,22 +1,20 @@
 const tours = [
   {
-    name: "Moalboal Sardine Run",
+    name: "moalboal-sardine-tour",
     images: [
-      "/images/moalboal-sardine-tour/1.jpg",
-      "/images/moalboal-sardine-tour/2.jpg"
+      "/images/moalboal-sardine-tour/1.jpg"
     ]
   },
   {
-    name: "Whale Shark Oslob",
+    name: "whaleshark-dive",
     images: [
-      "/images/whaleshark-dive/1.jpg",
-      "/images/whaleshark-dive/2.jpg"
+      "/images/whaleshark-dive/1.jpg"
     ]
   },
   {
-    name: "Sirao Flower Garden",
+    name: "sirao",
     images: [
-      "/images/sirao/1.jpg"
+      "/images/sirao/sirao-1.jpg"
     ]
   }
 ];
