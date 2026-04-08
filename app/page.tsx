@@ -1,3 +1,5 @@
+console.log("TEST CHANGE");
+
 const tours = [
   {
     name: "Sirao Flower Garden",
